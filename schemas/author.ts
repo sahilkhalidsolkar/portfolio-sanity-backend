@@ -11,34 +11,64 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 96,
-      },
+      name: 'email',
+      title: 'Email',
+      type: 'string',
     }),
+    
     defineField({
-      name: 'image',
-      title: 'Image',
+      name: 'profileImage',
+      title: 'Profile Image',
       type: 'image',
       options: {
         hotspot: true,
       },
     }),
     defineField({
-      name: 'bio',
-      title: 'Bio',
-      type: 'array',
-      of: [
-        {
-          title: 'Block',
-          type: 'block',
-          styles: [{title: 'Normal', value: 'normal'}],
-          lists: [],
-        },
-      ],
+      name: 'showCaseImg1',
+      title: 'Show Case Image 1',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'showCaseImg2',
+      title: 'Show Case Image 2',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'experience',
+      title: 'Experience',
+      type: 'string',
+    }),
+    defineField({
+      name: 'short_desc',
+      title: 'short description',
+      type: 'text',
+    }),
+    defineField({
+      name: 'linkedIn_url',
+      title: 'LinkedIn URL',
+      type: 'string',
+    }),
+    defineField({
+      name: 'insta_url',
+      title: 'Instagram URL',
+      type: 'string',
+    }),
+    defineField({
+      name: 'whatsapp_url',
+      title: 'Whatsapp URL',
+      type: 'string',
+    }),
+    defineField({
+      name: 'mail_url',
+      title: 'Mail URL',
+      type: 'string',
     }),
   ],
   preview: {
